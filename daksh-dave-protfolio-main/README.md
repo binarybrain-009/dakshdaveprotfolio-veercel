@@ -1,7 +1,6 @@
 
 # Portfolio Website
 
-This is the final version of the portfolio website created for Daksh Dave. Below are the details and instructions for setting up and deploying the website on Netlify.
 
 ## Features
 - Responsive design optimized for various devices.
@@ -67,14 +66,3 @@ Follow these steps to deploy the website to Netlify:
 │   ├── icons/
 ├── README.md            # Documentation for the project
 ```
-
-## Support
-
-If you encounter any issues or need help with the website or deployment, feel free to reach out to me at Sbinazhar671@gmail.com.
-
----
-
-Thank you for choosing me for this project! 😊
-``` 
-
-Let me know if you’d like me to customize this further!
