@@ -360,30 +360,45 @@
 <!--Experience-->
 <!-- Add this CSS to your stylesheet or within a <style> tag -->
   <style>
-    .experience-card {
-      background-color: #ffffff;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-    .experience-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    }
-    .exp-duration {
-      display: block;
-      margin-top: 1rem;
-      font-size: 0.9rem;
-      color: #555;
-      font-style: italic;
-    }
-    /* Ensure images are properly sized */
-    .experience-card .img-logo {
-      max-width: 100%;
-      height: auto;
-    }
+.experience-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+.experience-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Dark mode override */
+.dark .experience-card {
+  background-color: #1f2937; /* Tailwind's gray-800 */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+.dark .experience-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+/* Duration text color adjustments */
+.exp-duration {
+  display: block;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+  font-style: italic;
+}
+.dark .exp-duration {
+  color: #aaa;
+}
+
+/* Ensure images are properly sized */
+.experience-card .img-logo {
+  max-width: 100%;
+  height: auto;
+}
   </style>
   
   <!--Experience-->
@@ -2833,11 +2848,69 @@
     </div>
   </div>
 </article>
+<style>
+  /* Awards Section Styling */
+  #awards {
+    margin-bottom: 1rem;
+  }
+  #awards ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  #awards li {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-bottom: 1px solid #e5e7eb; /* light gray */
+  }
+  .award-title {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .award-details {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  .award-details strong {
+    font-weight: 700;
+    /* Ensure strong text inherits color */
+    color: inherit;
+  }
+  /* Dark mode overrides for awards */
+  .dark .award-details {
+    color: #ccc;
+  }
+  .dark #awards li {
+    border-bottom: 1px solid #374151; /* darker gray */
+  }
 
-<!-- Awards Section -->
+  /* Test Scores Section Styling */
+  #test-scores {
+    margin-top: 2rem;
+  }
+  #test-scores h2 {
+    margin-bottom: 1rem;
+  }
+  #test-scores .content p {
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+  }
+  #test-scores .content p b,
+  #test-scores .content p strong {
+    font-weight: 600;
+    color: inherit;
+  }
+</style>
+
+<!--Awards Section-->
 <h2 id="awards" class="dark:text-white">Awards & Recognitions</h2>
-
 <ul>
+  <li>
+    <span class="award-title dark:text-white">CyberFarm Challenge Winner</span>
+    <span class="award-details dark:text-white">
+      (Virginia Tech CAIA, Feb 2025): Winner of the Commonwealth's First Ag Datathon – CyberFarm. Organized by the Center for Advanced Innovation in Agriculture (CAIA) and the Commonwealth Cyber Initiative Southwest Node (CCI-SW), <strong>awarded a $10,000 grant with a $5,000 prize </strong>for the best project.
+    </span>
+  </li>
+  
   <li>
     <span class="award-title dark:text-white">MCN Scholarship</span>
     <span class="award-details dark:text-white">
@@ -2906,39 +2979,40 @@
   </li>
 </ul>
 
-    <!-- Test Scores Section -->
-    <section id="test-scores" class="dark:text-white container">
-      <h2 class="dark:text-white">Test Scores</h2>
+<!-- Test Scores Section -->
+<section id="test-scores" class="dark:text-white container">
+  <h2 class="dark:text-white">Test Scores</h2>
 
-      <article class="columns">
-        <div class="column is-3">
-          <figure class="image">
-            <img src="images/publications/TOEFL.jpg" class="img-logo" alt="TOEFL Logo" />
-          </figure>
-        </div>
-        <div class="column">
-          <div class="content">
-            <p><b>TOEFL</b><br /><span>Score: 105 · Aug 2023</span></p>
-            <p>The Test of English as a Foreign Language (TOEFL) is an internationally recognized standardized test that assesses the English language proficiency of non-native speakers. It is widely used for university admissions and professional certification. The test evaluates four core skills: Reading, Listening, Speaking, and Writing.</p>
-            <p><strong>Breakdown:</strong> Reading - 25, Listening - 30, Writing - 25, Speaking - 25</p>
-          </div>
-        </div>
-      </article>
+  <article class="columns">
+    <div class="column is-3">
+      <figure class="image">
+        <img src="images/publications/TOEFL.jpg" class="img-logo" alt="TOEFL Logo" />
+      </figure>
+    </div>
+    <div class="column">
+      <div class="content">
+        <p><b>TOEFL</b><br /><span>Score: 105 · Aug 2023</span></p>
+        <p>The Test of English as a Foreign Language (TOEFL) is an internationally recognized standardized test that assesses the English language proficiency of non-native speakers. It is widely used for university admissions and professional certification. The test evaluates four core skills: Reading, Listening, Speaking, and Writing.</p>
+        <p><strong>Breakdown:</strong> Reading - 25, Listening - 30, Writing - 25, Speaking - 25</p>
+      </div>
+    </div>
+  </article>
 
-      <article class="columns">
-        <div class="column is-3">
-          <figure class="image">
-            <img src="images/publications/GRE.jpg" class="img-logo" alt="GRE Logo" />
-          </figure>
-        </div>
-        <div class="column">
-          <div class="content">
-            <p><b>GRE</b><br /><span>Score: 329 · Jun 2021</span></p>
-            <p>The Graduate Record Examination (GRE) is a standardized test required for admission to many graduate programs worldwide. It evaluates analytical writing, verbal reasoning, and quantitative reasoning skills. The GRE is widely used for admissions in STEM, business, and social science programs.</p>
-            <p><strong>Breakdown:</strong> Quant - 170/170 (96th Percentile), Verbal - 159/170, AWA - 4/6</p>
-          </div>
-        </div>
-      </article>
+  <article class="columns">
+    <div class="column is-3">
+      <figure class="image">
+        <img src="images/publications/GRE.jpg" class="img-logo" alt="GRE Logo" />
+      </figure>
+    </div>
+    <div class="column">
+      <div class="content">
+        <p><b>GRE</b><br /><span>Score: 329 · Jun 2021</span></p>
+        <p>The Graduate Record Examination (GRE) is a standardized test required for admission to many graduate programs worldwide. It evaluates analytical writing, verbal reasoning, and quantitative reasoning skills. The GRE is widely used for admissions in STEM, business, and social science programs.</p>
+        <p><strong>Breakdown:</strong> Quant - 170/170 (96th Percentile), Verbal - 159/170, AWA - 4/6</p>
+      </div>
+    </div>
+  </article>
+
 
       <article class="columns">
         <div class="column is-3">
