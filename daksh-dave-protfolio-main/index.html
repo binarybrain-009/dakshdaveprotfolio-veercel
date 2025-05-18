@@ -259,6 +259,9 @@
                     <a class="dark:text-white" href="#services">Services</a>
                   </li>
                   <li>
+                    <a class="dark:text-white" href="#patents">Patents</a>
+                  </li>
+                  <li>
                     <a class="dark:text-white" href="#volunteering"
                       >Volunteering</a
                     >
@@ -417,6 +420,25 @@
   
   <!--Experience-->
   <h2 id="experience" class="dark:text-white" style="margin-bottom: 25px">Experience</h2>
+  
+  <article class="columns experience-card">
+    <div class="column is-3">
+      <figure class="image">
+        <img src="images/misc/Strategy.jpg" class="img-logo" alt="MicroStrategy Logo" />
+      </figure>
+    </div>
+    <div class="column">
+      <div class="content">
+        <p>
+          <b>MicroStrategy - Engineering Intern</b>
+        </p>
+        <p>
+          Shaping the future of enterprise intelligence by fusing generative AI with powerful analytics. At MicroStrategy, I'm building AI-driven engines for smart document understanding, lightning-fast summarization, and deep semantic search. From LLM orchestration to real-time insight delivery, my work empowers businesses to think faster and act smarter — all within a unified analytics platform.
+        </p>
+        <p class="exp-duration">Time: June 2025 – August 2025</p>
+      </div>
+    </div>
+  </article>
   
   <article class="columns experience-card">
     <div class="column is-3">
@@ -688,6 +710,86 @@
 </h2>
 
 <!--List of publications-->
+
+<article class="columns">
+  <div class="column is-3">
+    <figure class="image">
+      <img src="images/misc/LLM_NS.png" alt="LLM Cybersecurity" />
+    </figure>
+  </div>
+  <div class="column">
+    <div class="content">
+      <p>
+        <b>From Packets to Prompts: Large Language Models in the Cybersecurity Landscape</b><br />
+        <span class="pub-venue">Venue: arXiv (preprint), 2025</span><br />
+        A panoramic survey mapping how LLMs are reshaping eleven core security domains—from encrypted‑traffic parsing and anomaly detection to automated incident response, policy synthesis, and privacy‑preserving access control. The paper distills design patterns like retrieval‑augmented threat graphs, federated fine‑tuning, and log‑aware embeddings, while spotlighting open challenges around explainability, dual‑use risk, and edge deployment.<br /><br />
+        <a href="#" target="_blank" class="pub-link">[Preprint]</a>
+        <span class="fa-regular fa-newspaper publication-icon"></span>
+      </p>
+    </div>
+  </div>
+</article>
+
+
+<article class="columns">
+  <div class="column is-3">
+    <figure class="image">
+      <img src="images/misc/6g_fault.png" alt="6G Fault Detection" />
+    </figure>
+  </div>
+  <div class="column">
+    <div class="content">
+      <p>
+        <b>AI-Powered Fault Detection in 6G Cellular Networks</b><br />
+        <span class="pub-venue">Venue: Elsevier Journal on Network and Computer Applications (Under Review)</span><br />
+        This comprehensive survey highlights how AIOps, graph-based learning, and LLM log summarization are redefining fault detection in 6G. From root cause analysis to intent-driven anomaly tracking, the paper outlines a full-stack vision for self-healing networks. We explore techniques like diffusion-based synthetic data generation and federated model optimization, offering a blueprint for scalable, privacy-aware fault intelligence in next-gen telecom systems.<br /><br />
+        <a href="https://dakshdave.site/" target="_blank" class="pub-link">[Under-Review]</a>
+        <span class="fa-regular fa-newspaper publication-icon"></span>
+      </p>
+    </div>
+  </div>
+</article>
+
+<article class="columns">
+  <div class="column is-3">
+    <figure class="image">
+      <img src="images/misc/LLM_Edge.png" alt="LLM Edge Computing" />
+    </figure>
+  </div>
+  <div class="column">
+    <div class="content">
+      <p>
+        <b>Adapting Large Language Models for Edge Intelligence</b><br />
+        <span class="pub-venue">Venue: IEEE EdgeCom 2025 (Under Review)</span><br />
+        A cutting-edge survey diving into the future of LLMs on edge devices. The paper organizes key challenges like split inference, energy-aware caching, and federated privacy, while mapping innovative solutions—from KV caching to layer skipping—that make LLMs viable for real-time reasoning on constrained hardware. We distill ten technical pillars and highlight open directions that blend AI, systems, and hardware into a next-gen edge stack.<br /><br />
+        <a href="https://dakshdave.site/" target="_blank" class="pub-link">[Under-Review]</a>
+        <span class="fa-regular fa-newspaper publication-icon"></span>
+      </p>
+    </div>
+  </div>
+</article>
+
+<article class="columns">
+  <div class="column is-3">
+    <figure class="image">
+      <img src="images/misc/ZTF_Tenko.png" alt="Tenko Framework" />
+    </figure>
+  </div>
+  <div class="column">
+    <div class="content">
+      <p>
+        <b>Tenko: A Zero Trust–Inspired Framework for Real-Time Threat Detection</b><br />
+        <span class="pub-venue">Venue: ACM Transactions on Privacy and Security (Under Review)</span><br />
+        Tenko enhances Kitsune IDS with adaptive thresholds, node-level scoring, and blockchain-backed trust memory. Designed for real-time, zero-trust network defense, it detects stealthy anomalies while suppressing false positives. Our results across nine attack types show Tenko significantly outperforms Kitsune, offering a blueprint for context-aware, decentralized security in modern cyber-physical systems.<br /><br />
+        <a href="https://dakshdave.site/" target="_blank" class="pub-link">[Under-Review]</a>
+        <span class="fa-regular fa-newspaper publication-icon"></span>
+      </p>
+    </div>
+  </div>
+</article>
+
+
+
 <article class="columns">
   <div class="column is-3">
     <figure class="image">
@@ -2643,6 +2745,7 @@
               <section id="services" class="mt-10">
                 <h2 class="dark:text-white text-2xl font-bold">Services</h2>
               
+                <!-- Conference & Journal Reviewer -->
                 <div class="mt-6">
                   <h3 class="dark:text-white text-xl font-semibold">Conference and Journal Reviewer</h3>
                   <ul class="list-disc ml-6 mt-2 text-base dark:text-white">
@@ -2654,26 +2757,54 @@
                   </ul>
                 </div>
               
+                <!-- Presenter -->
                 <div class="mt-8">
                   <h3 class="dark:text-white text-xl font-semibold">Presenter</h3>
                   <ul class="list-disc ml-6 mt-2 text-base dark:text-white">
-                    <li>
-                      29th IEEE ICT Conference: Presented "The New Frontier of Cybersecurity: Emerging Threats and Innovations."
-                    </li>
-                    <li>
-                      BDKCSE'23 Conference: Presented "AIOps-Driven Enhancement of Log Anomaly Detection in Unsupervised Scenarios."
-                    </li>
-                    <li>
-                      ICMERALDA'23: Presented "PotholeGuard: A Pothole Detection Approach by Point Cloud Semantic Segmentation."
-                    </li>
-                    <li>
-                      IEEE Comnetsat'23: Presented "Drone-Enabled Load Management for Solar Small Cell Networks in Next-Gen Communications Optimization for Solar Small Cells."
-                    </li>
+                    <li>29th IEEE ICT'23 Conference: Presented "The New Frontier of Cybersecurity: Emerging Threats and Innovations."</li>
+                    <li>BDKCSE'23 Conference: Presented "AIOps-Driven Enhancement of Log Anomaly Detection in Unsupervised Scenarios."</li>
+                    <li>ICMERALDA'23: Presented "PotholeGuard: A Pothole Detection Approach by Point Cloud Semantic Segmentation."</li>
+                    <li>IEEE Comnetsat'23: Presented "Drone-Enabled Load Management for Solar Small Cell Networks in Next-Gen Communications Optimization for Solar Small Cells."</li>
+                    <li>ASCE i3CE25, New Orleans: Presented "ROSTA — Robotic Sequential Task Assignment Framework for Multi-Robot Construction."</li>
+                  </ul>
+                </div>
+              
+                <!-- Symposia & Exhibitions -->
+                <div class="mt-8">
+                  <h3 class="dark:text-white text-xl font-semibold">Symposia &amp; Exhibitions</h3>
+                  <ul class="list-disc ml-6 mt-2 text-base dark:text-white">
+                    <li>CCI Symposium&nbsp;2025 – Commonwealth Cyber Initiative, Richmond, VA (Attendee &amp; Poster Sessions)</li>
+                    <li>CyberSmart Summit 2025 - Georgetown University, Washington-DC (Attendee &amp; Poster Sessions)</li>
+                    <li>BITSync 2025 - Mountain View, California (Attendee &amp; Mentor)</li>
+                    <li>GSMA RIG 2025 - Alexandria, Virginia 2025 - 5G &amp; Edge Showcase (Delegate)</li>
+                    <li>Snowflake Dev Summit 2025 – San Mateo, California (Attendee)</li>
                   </ul>
                 </div>
               </section>
-              
-<!-- volunteering  section -->
+
+              <section id="patents" class="mt-10">
+                <!-- Intellectual Property / Patents -->
+                <div class="mt-8">
+                  <h3 class="dark:text-white text-xl font-semibold">PATENTS</h3>
+                  <article class="columns experience-card mt-4">
+                    <div class="column is-3">
+                      <figure class="image">
+                        <img src="images/misc/ZTF_Tenko.png" alt="Tenko Patent" />
+                      </figure>
+                    </div>
+                    <div class="column">
+                      <div class="content">
+                        <p>
+                          <b>Tenko™ – Zero Trust‑Powered Real-Time Intrusion Detection</b><br />
+                          <span class="pub-venue">Status: Filing in Progress — USPTO Provisional Patent</span><br />
+                          This pending patent secures our adaptive quantile thresholding, node-level trust scoring, and blockchain-anchored reputation ledger. Filed through Virginia Tech’s LAUNCH IP office, with an envisioned PCT extension in&nbsp;2026.
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </section>
+              <!-- volunteering  section -->
 
 <h2 id="volunteering" class="dark:text-white">Volunteering</h2>
 
