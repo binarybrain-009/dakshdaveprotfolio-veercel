@@ -420,6 +420,26 @@
   
   <!--Experience-->
   <h2 id="experience" class="dark:text-white" style="margin-bottom: 25px">Experience</h2>
+
+  <article class="columns experience-card">
+    <div class="column is-3">
+      <figure class="image">
+        <img src="images/misc/Snowflake_img.png" class="img-logo" alt="MicroStrategy Logo" />
+      </figure>
+    </div>
+    <div class="column">
+      <div class="content">
+        <p>
+          <b>Snowflake - Engineering Intern</b>
+        </p>
+        <p>
+          Working on Snowflake's next-generation data platform, I am focused on enhancing data integration and analytics capabilities. My role involves developing scalable data pipelines, optimizing query performance, and implementing advanced security features to ensure data privacy and compliance.
+        </p>
+        <p class="exp-duration">Time: August 2025 – December 2025</p>
+      </div>
+    </div>
+  </article>
+
   
   <article class="columns experience-card">
     <div class="column is-3">
@@ -460,7 +480,7 @@
           contributes to O-RAN Alliance security standards, setting the stage for next-generation, self-defending telecom networks that adapt and
           evolve against emerging cyber threats.
         </p>
-        <p class="exp-duration">Time: Feb 2025 - Present</p>
+        <p class="exp-duration">Time: Feb 2025 - June 2025</p>
       </div>
     </div>
   </article>
@@ -710,6 +730,111 @@
 </h2>
 
 <!--List of publications-->
+<!-- RLLMs survey -->
+<article class="columns">
+  <div class="column is-3">
+    <figure class="image">
+      <img src="images/publications/RLLMs.png" alt="Reasoning LLMs" />
+    </figure>
+  </div>
+  <div class="column">
+    <div class="content">
+      <p>
+        <b>Reasoning LLMs: Methods, Architectures, and Challenges</b><br />
+        <span class="pub-venue">Venue: arXiv (preprint), 2025</span><br />
+        A comprehensive survey of techniques that push large language models beyond pattern‑matching and into structured reasoning.  It dissects prompting paradigms such as Chain‑of‑Thought, Self‑Consistency, Tree‑of‑Thoughts, and Program‑Aided inference, then reviews inference‑time architectures like GPT‑o1, DeepSeek‑R1, and Gemini Flash that allocate compute for deliberate “thinking.”  The paper maps this landscape across mathematics, law, science, and autonomous agents, and highlights open problems—hallucinated logic, verification bottlenecks, and neuro‑symbolic integration.<br /><br />
+        <a href="#" target="_blank" class="pub-link">[Preprint]</a>
+        <span class="fa-regular fa-newspaper publication-icon"></span>
+      </p>
+    </div>
+  </div>
+</article>
+
+<!-- Quantum‑Generative AI survey -->
+<article class="columns">
+  <div class="column is-3">
+    <figure class="image">
+      <img src="images/publications/Taxonomy of Quantum Generative Architectures-1.png" alt="Quantum Generative AI" />
+    </figure>
+  </div>
+  <div class="column">
+    <div class="content">
+      <p>
+        <b>Empowering Generative AI with Quantum Computing: Architectures, Applications, and Challenges</b><br />
+        <span class="pub-venue">Venue: ACM Computing Surveys (Under Review)</span><br />
+        This 80‑page survey offers the first end‑to‑end taxonomy of quantum‑native generative models.  We dissect five algorithmic families—Circuit Born Machines, Quantum GANs, Quantum VAEs, Quantum Boltzmann Machines, and the emerging class of Quantum Diffusion Networks—highlighting how qubit superposition and entanglement expand the expressivity of data distributions beyond classical limits.  A cross‑domain benchmark evaluates early prototypes in molecular design, IoT intrusion synthesis, fraud simulation, and exotic option pricing, revealing up to 6× parameter efficiency on NISQ simulators.<br /><br />
+        Beyond raw performance, the paper contrasts classical scaling walls (memory ∝ 2<sup>n</sup>) with quantum amplitude encoding, then dives into practical bottlenecks: barren plateaus, shot noise, error mitigation, and log‑depth circuit compilation.  A dedicated section surveys hybrid variational workflows that pair quantum generators with classical discriminators running on GPU clusters, offering a pragmatic bridge for the next five years.  Finally, we chart a roadmap toward energy‑efficient QGAI—covering cryogenic hardware, photonic qubits, and standardization of quantum model cards—while outlining ethical guardrails for dual‑use and algorithmic bias.<br /><br />
+        <a href="#" target="_blank" class="pub-link">[Under Review]</a>
+        <span class="fa-regular fa-newspaper publication-icon"></span>
+      </p>
+    </div>
+  </div>
+</article>
+
+<!-- Tenko++ IDS paper -->
+<article class="columns">
+  <div class="column is-3">
+    <figure class="image">
+      <img src="images/publications/tenko.drawio (1).png" alt="Tenko++ IDS" />
+    </figure>
+  </div>
+  <div class="column">
+    <div class="content">
+      <p>
+        <b>Tenko++: Next‑Gen Lightweight Intrusion Detection with Zero Trust Enforcement</b><br />
+        <span class="pub-venue">Venue: Computers & Security (Revised & Resubmitted)</span><br />
+        Tenko++ augments the classic Kitsune autoencoder ensemble with three key innovations: (i) <i>error‑amplified subnetworks</i> that boost minority‑class recall without extra parameters, (ii) <i>skip‑connected temporal smoothing</i> that stabilizes RMSE curves under bursty traffic, and (iii) a <i>streaming node‑level trust oracle</i> that assigns dynamic reputations fed into a Zero Trust policy engine.  A lightweight blockchain layer (9 KB blocks, PBFT consensus) stores signed anomaly hashes, enabling tamper‑proof forensics and segment‑level micro‑segmentation policies.<br /><br />
+        Evaluated on CIC‑IDS 2017, UNSW‑NB15, and a 160 GB 5G fronthaul trace, Tenko++ cuts false positives by > 35 % and halves detection latency (0.48 ms median) on a Raspberry Pi 5 with 4 GB RAM.  Memory footprint stays below 22 MB thanks to centroid quantization and on‑chip Bloom filters.  A live lab demo shows autonomous quarantine of rogue UEs within 120 ms of exploit launch, meeting 3GPP URLLC timing.  The paper closes with an open‑source roadmap—eBPF probes, Wasm filters, and SBOM‑aware updates—to foster community adoption across telco MEC and smart‑factory edge nodes.<br /><br />
+        <a href="#" target="_blank" class="pub-link">[Revised Manuscript]</a>
+        <span class="fa-regular fa-newspaper publication-icon"></span>
+      </p>
+    </div>
+  </div>
+</article>
+
+
+<!-- Generative‑AI in STEM education review -->
+<article class="columns">
+  <div class="column is-3">
+    <figure class="image">
+      <img src="images/publications/Math 1-1.png" alt="GAI in STEM Education" />
+    </figure>
+  </div>
+  <div class="column">
+    <div class="content">
+      <p>
+        <b>Generative Artificial Intelligence in STEM Education: A Review of Applications, Benefits, and Challenges</b><br />
+        <span class="pub-venue">Venue: IEEE Access (In Press)</span><br />
+        Reviews GPT‑4, DALL·E 3, AlphaCode, and similar tools through a pedagogical lens, categorizing use‑cases—automated explanations, AI‑generated visualizations, virtual labs, adaptive assessments—across science, technology, engineering, and mathematics.  It weighs benefits (personalized learning, resource democratization) against risks (hallucinations, equity gaps, data privacy), and outlines policy and research priorities for transparent, teacher‑centered adoption.<br /><br />
+        <a href="#" target="_blank" class="pub-link">[Early‑Access]</a>
+        <span class="fa-regular fa-newspaper publication-icon"></span>
+      </p>
+    </div>
+  </div>
+</article>
+
+<!-- Federated‑Learning + IoT healthcare paper -->
+<article class="columns">
+  <div class="column is-3">
+    <figure class="image">
+      <img src="images/publications/FL_IOT.png" alt="Federated Learning for IoT Health" />
+    </figure>
+  </div>
+  <div class="column">
+    <div class="content">
+      <p>
+        <b>Secure Federated Learning for Cognitive‑Health IoT via Blockchain and Transformer‑Based Incremental Models</b><br />
+        <span class="pub-venue">Venue: IEEE Internet of Things Journal (Under Review)</span><br />
+        Proposes an IoT‑Chain architecture that fuses PBFT consensus, DAG micro‑blocks, and transformer‑based incremental learning with Gaussian differential privacy.  A priority‑weighted aggregation scheme boosts global accuracy (≥ 99 %) on DepresJson and MMODMDA datasets while a blockchain ledger provides tamper‑proof model provenance.  The framework demonstrates scalable, low‑latency health monitoring without raw data exposure.<br /><br />
+        <a href="#" target="_blank" class="pub-link">[Under‑Review]</a>
+        <span class="fa-regular fa-newspaper publication-icon"></span>
+      </p>
+    </div>
+  </div>
+</article>
+
+
+
 
 <article class="columns">
   <div class="column is-3">
@@ -1333,7 +1458,32 @@
               </article>
               
               <!-- Projects -->
-              <h2 id="projects" class="dark:text-white">Projects</h2>
+
+                            <h2 id="projects" class="dark:text-white">Projects</h2>
+              <article class="columns">
+                <div class="column">
+                  <div class="content">
+                    <p>
+                      <b>Autobot – A Voice-First Business Assistant</b>
+                      <br />
+                      <span>Jun 2025 – Present</span>
+                    </p>
+                    <p>
+                      Autobot is a real-time, voice-first business assistant designed to bridge natural human interaction with contextual intelligence. It integrates wake-word detection, streaming ASR (via Vosk), sentiment and emotion recognition, and socket-driven backend orchestration to create a fluid and responsive assistant experience. The system features a dual-path attention model that fuses textual and prosodic cues to drive emotion-aware dialog generation.
+                      <br /><br />
+                      My key contribution was architecting the full-stack pipeline—from reactive frontend voice flow to the backend orchestration layer—using Node.js, Python, and socket.io. I also implemented a novel latency-optimized voice loop that bypasses traditional buffering delays by overlapping ASR decoding and NLU triggers. Additionally, I extended the assistant’s context window through a lightweight memory module and emotion-shifting logic for adaptive tone, making the interaction feel more human and less transactional.
+                    </p>
+                    <a
+                      href="https://github.com/binarybrain-009/sesame-ai"
+                      target="_blank"
+                      class="btn"
+                      style="background-color: #0073b1; color: white; border: none; padding: 5px 10px; font-size: 14px; border-radius: 5px; cursor: pointer; transition: background-color 0.3s;"
+                      onmouseover="this.style.backgroundColor='#005a8c'"
+                      onmouseout="this.style.backgroundColor='#0073b1'"
+                    >Show Project</a>
+                  </div>
+                </div>
+              </article>
 
               <article class="columns">
                 <div class="column">
@@ -2745,22 +2895,26 @@
               <section id="services" class="mt-10">
                 <h2 class="dark:text-white text-2xl font-bold">Services</h2>
               
-                <!-- Conference & Journal Reviewer -->
-                <div class="mt-6">
-                  <h3 class="dark:text-white text-xl font-semibold">Conference and Journal Reviewer</h3>
-                  <ul class="list-disc ml-6 mt-2 text-base dark:text-white">
-                    <li>IEEE HONET 2024</li>
-                    <li>Springer: Neural Processing Letters</li>
-                    <li>SGRE24-IEEE</li>
-                    <li>IEEE ICC'24 - WC Symposium</li>
-                    <li>IEEE HONET 2023</li>
-                  </ul>
-                </div>
-              
-                <!-- Presenter -->
-                <div class="mt-8">
-                  <h3 class="dark:text-white text-xl font-semibold">Presenter</h3>
-                  <ul class="list-disc ml-6 mt-2 text-base dark:text-white">
+              <!-- Conference & Journal Reviewer -->
+              <div class="mt-6">
+                <h3 class="dark:text-white text-xl font-semibold">Conference and Journal Reviewer</h3>
+                <ul class="list-disc ml-6 mt-2 text-base dark:text-white">
+                  <li>IEEE HONET 2024</li>
+                  <li>Springer: Neural Processing Letters</li>
+                  <li>SGRE24-IEEE</li>
+                  <li>IEEE ICC'24 - WC Symposium</li>
+                  <li>IEEE HONET 2023</li>
+                  <li>EAI Endorsed Transactions on Energy Web</li>
+                  <li>Transactions on Emerging Telecommunications Technologies (Wiley)</li>
+                  <li>Social Sciences & Humanities Open (Elsevier)</li>
+                  <li>Artificial Intelligence in Medicine (Elsevier)</li>
+                </ul>
+              </div>
+
+              <!-- Presenter -->
+              <div class="mt-8">
+                <h3 class="dark:text-white text-xl font-semibold">Presenter</h3>
+                <ul class="list-disc ml-6 mt-2 text-base dark:text-white">
                     <li>29th IEEE ICT'23 Conference: Presented "The New Frontier of Cybersecurity: Emerging Threats and Innovations."</li>
                     <li>BDKCSE'23 Conference: Presented "AIOps-Driven Enhancement of Log Anomaly Detection in Unsupervised Scenarios."</li>
                     <li>ICMERALDA'23: Presented "PotholeGuard: A Pothole Detection Approach by Point Cloud Semantic Segmentation."</li>
